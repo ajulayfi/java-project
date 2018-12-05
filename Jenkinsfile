@@ -9,8 +9,5 @@ node('linux') {
 		sh 'ant'
 		sh 'ant -f build.xml -v' 
 	}
-	stage('Deploy') {
-		sh 'cp https://github.com/eyad-ust/java-project/blob/master/lib/junit-4.10.jar https://s3.amazonaws.com/username-assignment-4
-'	
-	}
+
 }
