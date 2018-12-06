@@ -13,4 +13,3 @@ node('linux') {
         sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://bucket-abdul2018'
     }
     }
-}
