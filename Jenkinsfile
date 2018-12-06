@@ -10,7 +10,7 @@ node('linux') {
 		sh 'ant -f build.xml -v' 
 	}
 	stage('Deploy') {
-		sh 'aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://itidal-assignment-10/' 
+		sh 'aws s3 cp /workspace/java-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://alju3541-assignment-4/' 
 	}
 
 }
