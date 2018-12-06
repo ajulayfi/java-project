@@ -10,7 +10,7 @@ node('linux') {
 		sh 'ant -f build.xml -v' 
 	}
 	stage('Deploy') {
-		sh 'aws s3 cp https://github.com/ajulayfi/java-project/blob/master/lib/junit-4.10.jar https://s3.amazonaws.com/alju3541-assignment-4'	
+		sh 'cp https://github.com/ajulayfi/java-project/blob/master/lib/junit-4.10.jar https://s3.amazonaws.com/alju3541-assignment-4'	
 	}
 
 }
