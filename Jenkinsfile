@@ -1,3 +1,5 @@
+properties([pipelineTriggers([githubPush()])])
+
 node('linux') {   
 	git url: 'https://github.com/ajulayfi/java-project.git'
 	stage('Unit Tests') {
