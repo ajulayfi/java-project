@@ -11,7 +11,6 @@ node('linux') {
     }
     stage('Deploy'){
         sh 'aws s3 cp /workspace/docker-pipeline/dist/rectangle-${BUILD_NUMBER}.jar s3://bucket-abdul2018'
-        sh 'cp s3://bucket-abdul2018/classweb.html workspace/docker-pipeline/dist/index.html'
     }
     
 }
